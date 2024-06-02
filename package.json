@@ -1,5 +1,6 @@
 {
   "name": "autobusy-app",
+  "homepage": "https://alexshch09.github.io/autobusy_react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
