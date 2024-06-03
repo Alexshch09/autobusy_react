@@ -1,8 +1,9 @@
 import React from 'react';
+import { Container, Button, Navbar } from 'react-bootstrap';
 
 function Logo() {
   return (
-    <div>Лого</div>
+    <Navbar.Brand href="#">Лого</Navbar.Brand>
   );
 }
 

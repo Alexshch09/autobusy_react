@@ -5,6 +5,7 @@ import Map from './components/map/Map';
 import SettingsModal from './components/modals/settings_modal/SettingsModal';
 import StopsModal from './components/modals/stops_modal/StopsModal';
 import './App.css';
+import Header from './components/header/Header';
 
 function App() {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
@@ -23,12 +24,7 @@ function App() {
 
   return (
     <div>
-      <Navbar bg="dark" variant="dark">
-        <Container style={{ height: '4vh' }}>
-          <Navbar.Brand href="#">Лого</Navbar.Brand>
-          <Button variant="outline-light" onClick={() => setShowSettingsModal(true)}>Настройки</Button>
-        </Container>
-      </Navbar>
+      <Header setShowSettingsModal={setShowSettingsModal}/>
       <Map onStopClick={handleStopClick} />
       <SettingsModal show={showSettingsModal} onHide={handleCloseSettings} />
       <StopsModal show={showStopModal} onHide={handleCloseStop} selectedStop={selectedStop} />
