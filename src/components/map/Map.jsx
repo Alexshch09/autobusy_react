@@ -34,17 +34,6 @@ const Map = ({ onStopClick }) => {
     setRouteViewMode(true);
   };
 
-  const handleMouseOver = async (vehicle) => {
-    if (!trajectories[vehicle.line_id]) {
-      await fetchTrajectory(vehicle.line_id);
-    }
-    setHoveredVehicle(vehicle);
-  };
-
-  const handleMouseOut = () => {
-    setHoveredVehicle(null);
-  };
-
   const handleCloseRouteView = () => {
     setRouteViewMode(false);
     setSelectedVehicle(null);

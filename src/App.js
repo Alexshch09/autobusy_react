@@ -15,7 +15,7 @@ function App() {
     setSelectedStop(stop);
     setTimeout(() => {
       setShowStopModal(true);
-    }, 70);
+    }, 120);
   };
 
   const handleCloseSettings = () => setShowSettingsModal(false);

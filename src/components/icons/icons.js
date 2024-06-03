@@ -12,8 +12,7 @@ export const createVehicleIcon = (lineNumber, color) => {
     html: iconHtml,
     className: '',
     iconSize: [30, 30],
-    iconAnchor: [15, 15],
-    popupAnchor: [0, -15]
+    iconAnchor: [15, 15]
   });
 };
 
@@ -25,7 +24,6 @@ export const createStopIcon = () => {
     html: iconHtml,
     className: '',
     iconSize: [30, 30],
-    iconAnchor: [15, 15],
-    popupAnchor: [0, -15]
+    iconAnchor: [15, 15]
   });
 };

@@ -26,7 +26,7 @@ function StopsModal({ show, onHide, selectedStop }) {
     <Modal show={show} onHide={onHide}>
       <StopsHeader selectedStop={selectedStop} />
       <Modal.Body>
-        <StopsBody selectedStop={selectedStop} loadingDepartures={loadingDepartures} departures={departures} />
+        <StopsBody loadingDepartures={loadingDepartures} departures={departures} />
       </Modal.Body>
       <StopsFooter handleClose={onHide} />
     </Modal>
