@@ -1,19 +1,13 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import Settings from './Settings/Settings';
+import Choose from './Choose/Choose';
 
 function SettingsBody() {
   return (
     <Accordion>
 
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Выбор Автобусов</Accordion.Header>
-
-        <Accordion.Body>
-
-        </Accordion.Body>
-
-      </Accordion.Item>
+      <Choose />
 
       <Settings />
 

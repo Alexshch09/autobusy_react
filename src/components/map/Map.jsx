@@ -14,7 +14,6 @@ const Map = ({ onStopClick }) => {
   const [focusedStops, setFocusedStops] = useState([]);
   const [mapZoom, setMapZoom] = useState(13);
   const [trajectories, setTrajectories] = useState({});
-  const [hoveredVehicle, setHoveredVehicle] = useState(null);
   const [routeViewMode, setRouteViewMode] = useState(false);
   const [selectedVehicle, setSelectedVehicle] = useState(null);
 

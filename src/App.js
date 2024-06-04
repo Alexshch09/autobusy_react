@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Container, Button, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Header from './components/header/Header';
+
 import Map from './components/map/Map';
 import SettingsModal from './components/modals/settings_modal/SettingsModal';
 import StopsModal from './components/modals/stops_modal/StopsModal';
+
 import './App.css';
-import Header from './components/header/Header';
 
 function App() {
   const [showSettingsModal, setShowSettingsModal] = useState(false);
@@ -16,7 +18,7 @@ function App() {
     setSelectedStop(stop);
     setTimeout(() => {
       setShowStopModal(true);
-    }, 120);
+    }, 140);
   };
 
   const handleCloseSettings = () => setShowSettingsModal(false);

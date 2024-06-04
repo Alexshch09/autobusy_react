@@ -16,3 +16,9 @@ export const fetchTrajectory = async (lineId, setTrajectories) => {
   const data = await response.json();
   setTrajectories(prevState => ({ ...prevState, [lineId]: data }));
 };
+
+export const fetchLines = async (setLines) => {
+  const response = await fetch('https://www.zditm.szczecin.pl/api/v1/lines');
+  const data = await response.json();
+  setLines(data);
+}
